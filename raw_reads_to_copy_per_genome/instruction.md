@@ -77,6 +77,11 @@ python table_translate_single_column.py -i read_cpg_wf/${sample_id}/${sample_id}
 ```
 
 
-Blastx results can be combined into cpg profiles.
+Blastx results can be combined into cpg profiles using `read_blastx_to_norm_profile.py`
+
+`read_blastx_cpg.sh` wraps the I/O for that python script. Modify the file paths in `read_blastx_cpg.sh` to fit your file path settings and run it.
+
 ```
+chmod 755 read_blastx_cpg.sh
+./read_blastx_cpg.sh
 ```
